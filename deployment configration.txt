@@ -1,0 +1,39 @@
+Key Configuration Details for Netlify Deployment
+1. Branch to Deploy
+Value: main
+
+This specifies that Netlify should deploy from the main branch of your repository
+
+2. Base Directory
+Value: (Leave empty if your site is at the root)
+
+If your project is in a subdirectory (e.g., in a monorepo), specify that directory here
+
+3. Build Command
+Value: npm run build
+
+This command builds your project. For a simple static site, you can leave this empty
+
+4. Publish Directory
+Value: dist
+
+This is where Netlify looks for the built files to deploy
+
+Common alternatives: build, public, _site, or . for current directory
+
+5. Functions Directory
+Value: netlify/functions
+
+This is where you would place any serverless functions for backend operations
+
+Additional Recommendations
+Create a netlify.toml file in your project root with the configuration settings
+
+Set environment variables in Netlify's dashboard for configuration that shouldn't be in code
+
+Optimize your build by minifying CSS/JS and optimizing images
+
+Set up proper headers for security and performance
+
+This configuration will ensure your Web3 Gaming Hub deploys successfully to Netlify with optimal settings for performance and security.
+
